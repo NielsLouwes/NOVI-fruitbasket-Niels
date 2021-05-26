@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {useState} from "react";
+import { useForm } from 'react-hook-form';
 
 function App() {
 
@@ -73,6 +74,49 @@ function App() {
         > Reset</button>
 
       </form>
+
+
+            // react hook form
+      <section>
+        <form className="form">
+          <div>
+          <label htmlFor="firstname">Voornaam</label>
+          <input id={"firstname"} type="text"/>
+          </div>
+
+          <div>
+            <label htmlFor="lastname">Achternaam</label>
+            <input id={"lastname"} type="text"/>
+          </div>
+
+          <div>
+            <label htmlFor="age">Leeftijd</label>
+            <input id={"age"}   type="text"/>
+          </div>
+
+          <div>
+            <label htmlFor="postalcode">Postcode</label>
+            <input id={"postalcode"}  type="text"/>
+          </div>
+          
+          <div>
+            <label htmlFor="frequency">Bezorgfrequentie</label>
+            <select name="delivery" id="delivery">
+              <option value="weekly">Iedere week</option>
+              <option value="biWeekly">Om de week</option>
+              <option value="monthly">Iedere maand</option>
+              <option value="other">Anders</option>
+            </select>
+          </div>
+            <label htmlFor="commentbox">Opmerking</label>
+            <textarea name="commentbox" id="commentbox" cols="70" rows="8"></textarea>
+
+
+        </form>
+
+      </section>
+
+
     </section>
   </section>
 
