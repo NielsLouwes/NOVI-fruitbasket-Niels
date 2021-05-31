@@ -26,16 +26,55 @@ h2 {
     flex-direction: column;
     min-height: 40vh;
     min-width: 20vh;
+    background: lightslategrey;
+}
+
+.form-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40vh;
+    min-width: 20vh;
 }
 
 .fruit-items {
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    min-height: 25px
+    width: 300px;
+
 }
 
 
 button {
-    width: 50px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+
+}
+
+label {
+    float: left;
+    text-align: left;
+    margin-right: 50px;
+    width: 100px;
+
+}
+
+input {
+    color: black;
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0 10px 0;
+    font-weight: bolder;
+
+}
+
+input:focus {
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
+
 }
